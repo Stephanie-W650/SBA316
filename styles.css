@@ -1,0 +1,104 @@
+body {
+    font-family: Calibri
+}
+
+/* .container {
+    display: flex;
+} */
+.container{
+    display: flex;
+    width:1800px;
+    flex-wrap: wrap;
+    
+
+}
+.container1{
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-self: center;
+    align-items: center;
+    width:1700px;
+    /* margin-bottom: 100px; */
+}
+.container2{
+    display: flex;
+ 
+    height: 1600px;
+
+}
+
+#form1 {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 800px;
+    margin-top: 10%;
+
+}
+
+#form1 input[type="submit"] {
+    background-color: aqua;
+   
+}
+
+#form1 input[type="text"],
+#form1 input[type="email"],
+#form1 input[type="submit"] { 
+    width: 400px;
+    padding: 10px;
+    outline: 1px solid grey;
+    margin-bottom: 10px;
+}
+
+#form2 {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 800px;
+    margin-top: 10%;
+
+}
+
+#form2 input[type="text"]{ 
+    width: 400px;
+    padding: 10px;
+    outline: 1px solid grey;
+    margin-bottom: 10px;
+
+}
+.KeepSignin {
+   
+align-items: center;
+margin-bottom: 10px;
+
+  }
+
+  .KeepSignin input[type='checkbox'] {
+    padding: 10px;
+    padding: 10px;
+  
+  }
+
+#loginButton {
+    padding: 10px;
+    padding: 10px;
+    width: 400px;
+    outline: 1px solid grey;
+    background-color: aqua;
+  }
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+ margin-left: 500px;
+    width: 550px;
+}
+
+#image {
+    width: 500px;
+    align-items: center;
+   justify-content: center;
+    
+}

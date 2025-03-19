@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+   
+</head>
+
+<body>
+    <div class="container">
+        <div class="container1">
+            <div class="card-body" id="card">
+                <div class="img-container">
+                    <img src="https://images.pexels.com/photos/30002088/pexels-photo-30002088/free-photo-of-aerial-view-of-exotic-elafonissi-beach-greece.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                        alt="TravelPhotos" id="image">
+                </div>
+                <h1>Travel Photos</h1>
+                    <button id='demo' onclick="myFunction()">Click me for more tips</button>
+                    <button id="demo2" onclick="myFunction2()">Click me for more information</button>
+                    <p id="information"></p>
+            </div>
+        </div>
+
+        <div class="container2">
+            <div class="formOne">
+                <form id="form1">
+                    <input name="username" type="text" placeholder="Username" pattern="^[a-zA-Z]+"
+                        title="Please start your username with a letter from a-z.">
+
+                    <input name="email" type="email" placeholder="Email">
+
+                    <input name="password" type="text" placeholder="Password">
+
+                    <input name="checkPassword" type="text" placeholder="Repeat Password">
+
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+            <div class="formTwo" id="formTwo2">
+                <form id='form2'>
+                    <input name='username' type="text" placeholder="username">
+                    <input name='password' type="text" placeholder="password">
+                    <div class="KeepSignin">
+                        <input name='keep' type="checkbox">
+                        <label for="keep">Keep me logged in.</label>
+                    </div>
+                    <input id='loginButton' type="submit" value="login">
+
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
