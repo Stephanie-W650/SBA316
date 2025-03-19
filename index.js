@@ -1,4 +1,5 @@
 //Use appendChild and/or prepend to add new elements to the DOM.
+//Create at least one element using createElement.
 const cardBody = document.getElementById('card')
 const heading2 = document.createElement('h2')
 heading2.innerHTML = "Register today to access more beautiful travel photos!";
@@ -35,6 +36,7 @@ photoList.forEach((list) => {
 }
 )
 
+//Include at least one form and/or input with DOM event-based validation.
 const form1 = document.getElementById('form1');
 const username = form1.elements['username']
 const email = form1.elements['email']
@@ -44,7 +46,7 @@ const checkPassword = form1.elements['checkPassword']
 form1.addEventListener("submit", validate)
 
 function validate(event) {
-    const nameVal = valudateUserName();
+    const nameVal = validateUserName();
     if (nameVal === false) {
         event.preventDefault();
         return false;
@@ -56,7 +58,7 @@ function validate(event) {
         return false;
     }
 
-    const checkPasswordVal = passwordVal;
+    const checkPasswordVal = validateCheckPassword();
     if (checkPasswordVal === false) {
         event.preventDefault();
         return false;
@@ -68,7 +70,7 @@ function validate(event) {
     return true;
 }
 
-function valudateUserName() {
+function validateUserName() {
     if (username.value === "") {
         alert("Please provide a username")
         username.focus()
@@ -76,13 +78,6 @@ function valudateUserName() {
     }
     if (username.length < 4) {
         alert("The username must be at least four characters long.")
-        username.focus();
-        return false;
-    }
-
-    const pattern = /^\S+\w{4,8}\S{1,}/;
-    if (!pattern.test(username.value)) {
-        alert("The username cannot contain any special characters or whitespace.")
         username.focus();
         return false;
     }
@@ -142,6 +137,17 @@ function validatePassword() {
     return password.value;
 }
 
+
+function validateCheckPassword() {
+
+if(checkPassword.value !== password.value) {
+    alert("Both passwords must match");
+    checkPassword.focus();
+    return false;
+}
+return checkPassword.value;
+}
+//Use the parent-child-sibling relationship to navigate between elements at least once 
 const form2 = document.getElementById('form2')
 const username2 = form2.elements['username']
 const password2 = username2.nextElementSibling
@@ -202,4 +208,3 @@ function validKeepLogin() {
     return true;
 }
 
-//------------------------------------

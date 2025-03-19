@@ -35,22 +35,30 @@
         <div class="container2">
             <div class="formOne">
                 <form id="form1">
+                    <!-- Include at least one form and/or input with HTML attribute validation. -->
                     <input name="username" type="text" placeholder="Username" pattern="^[a-zA-Z]+"
-                        title="Please start your username with a letter from a-z.">
+                        title="Please start your username with a letter from a-z." required>
 
-                    <input name="email" type="email" placeholder="Email">
+                    <input name="email" type="email" placeholder="Email" 
+                    required>
 
-                    <input name="password" type="text" placeholder="Password">
+                    <input 
+                    type="tel" name="Zip" min="5" maxlength="5" id="ZipID"
+                    placeholder="Enter Zip Code" pattern="\d{5}" title="Five-digit Zip Code"
+                    required
+                  />
 
-                    <input name="checkPassword" type="text" placeholder="Repeat Password">
+                    <input name="password" type="text" placeholder="Password" required>
 
-                    <input type="submit" value="Submit">
+                    <input name="checkPassword" type="text" placeholder="Repeat Password" required>
+
+                    <input type="submit" value="Register">
                 </form>
             </div>
             <div class="formTwo" id="formTwo2">
                 <form id='form2'>
-                    <input name='username' type="text" placeholder="username">
-                    <input name='password' type="text" placeholder="password">
+                    <input name='username' type="text" placeholder="username" required>
+                    <input name='password' type="text" placeholder="password" required>
                     <div class="KeepSignin">
                         <input name='keep' type="checkbox">
                         <label for="keep">Keep me logged in.</label>

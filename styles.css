@@ -44,7 +44,8 @@ body {
 
 #form1 input[type="text"],
 #form1 input[type="email"],
-#form1 input[type="submit"] { 
+#form1 input[type="submit"],
+#form1 input[type="tel"] { 
     width: 400px;
     padding: 10px;
     outline: 1px solid grey;
