@@ -1,22 +1,39 @@
+//Use appendChild and/or prepend to add new elements to the DOM.
 const cardBody = document.getElementById('card')
 const heading2 = document.createElement('h2')
 heading2.innerHTML = "Register today to access more beautiful travel photos!";
 cardBody.appendChild(heading2)
 
+
+//Modify the style and/or CSS classes of an element in response to user interactions using the style or classList properties.
 //https://www.w3schools.com/jsref/event_onclick.asp
 function myFunction() {
 document.getElementById('demo').style.backgroundColor = 'yellow'
 window.open('https://en.wikipedia.org/wiki/Travel_photography', '_blank')
 
-}
-const button2 = document.getElementById('demo2')
-button2.addEventListener('click', moreInfor)
-
-function moreInfor(event) {
-    const information = document.getElementById('information')
-    information.innerHTML = "<b>Register now!</b>" 
+//Modify the HTML or text content of at least one element in response to user interaction using innerHTML, innerText, or textContent.
+const information = document.getElementById('information')
+    information.innerHTML = "<b>Click the photo above to see what happens!</b>" 
     information.style.color = 'red'
 }
+
+//Modify at least one attribute of an element in response to user interaction.
+const image = document.getElementById('image')
+image.addEventListener('click', changeBorder)
+
+function changeBorder(event) {
+ image.setAttribute('style', 'border: 6px solid yellow')
+}
+
+//Cache at least one element using querySelector or querySelectorAll.
+//Iterate over a collection of elements to accomplish some task.
+const photoList = document.querySelectorAll('li')
+//https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelectorAll
+photoList.forEach((list) => {
+    list.style.color = 'blue';
+    console.log(list);
+}
+)
 
 const form1 = document.getElementById('form1');
 const username = form1.elements['username']
